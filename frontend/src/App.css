@@ -13,11 +13,10 @@
   align-items: center;
   justify-content: center;
   color: red;
-  width: 500px;
+  width: 400px;
   height: 800px;
   background-color: red;
   margin: auto;
-  margin-top: 10px;
 }
 
 @media (prefers-reduced-motion: no-preference) {

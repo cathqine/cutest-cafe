@@ -4,7 +4,7 @@ const IngredientsRun = () => {
   return (
     <>
       <header className="mobile">
-        <p>DisplayCabinet</p>
+        <h1>IngredientsRun</h1>
       </header>
     </>
   )

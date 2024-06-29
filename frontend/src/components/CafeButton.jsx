@@ -11,7 +11,7 @@ const CafeButton = (props) => {
     <>
       <div style={{ margin: '1em 0 1em 0' }}>
         <Link to={location} state={{ usersResult: props.results }} style={{ textDecoration: 'none' }}>
-          <Button disabled={props.disabled} variant='outlined' color="warning" style={{ backgroundColor: 'aliceblue' }}>
+          <Button disabled={props.disabled} variant='text' color="info" style={{ backgroundColor: 'rgba(255, 255, 255, 0.75)', fontWeight: 'bold' }}>
             {props.content}
           </Button>
         </Link>

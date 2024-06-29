@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button, Tooltip, IconButton } from '@mui/material';
 
-import arrow from '../../assets/outside_arrow.png';
+import arrow from '../../assets/left_arrow.png';
 
 const KitchenOvenButton = (props) => {
   let location = props.page;
@@ -11,7 +11,7 @@ const KitchenOvenButton = (props) => {
   }
   return (
     <>
-      <Tooltip title="KitchenOven" arrow>
+      <Tooltip title="Oven" arrow>
         <IconButton>
           <Link to={location} style={{ textDecoration: 'none' }}>
             <Button variant='text'>

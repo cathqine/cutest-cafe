@@ -1,6 +1,6 @@
 import React from 'react';
 import bg from '../../assets/kitchen.png';
-import CafeButton from '../CafeButton';
+import KitchenOvenButton from '../cafe/KitchenOvenButton';
 import '../../cafe.css';
 
 const Kitchen = () => {

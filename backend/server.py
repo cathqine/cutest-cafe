@@ -1,13 +1,14 @@
-from flask import Flask, jsonify
+from flask import Flask, jsonify, request
 from player import Player
 from werkzeug.utils import secure_filename
 import xml.etree.ElementTree as ET # pip install elementpath
 import pandas as pd
+from flask_cors import CORS
 
 app = Flask(__name__)
+CORS(app)
 
 player = Player()
-
 
 @app.route("/home")
 def home():
@@ -29,9 +30,10 @@ def kitchen_oven():
     return {player.ingredients.values()}
 
 # submit button in ingredients run
-@app.route('/ingredients_run/....', methods=['POST'])
+@app.route('/ingredients-run', methods=['POST'])
 def get_ingredient():
-    ingredient = request.json
+    ingredient = request.json.get('data')
+    print(ingredient)
     return ingredient
 
 @app.route('/ingredients_run', methods=['POST'])

@@ -5,19 +5,17 @@ import '../../cafe.css';
 import IngredientsDialog from './IngredientsDialog';
 import DisplayCabinetButton from './DisplayCabinetButton';
 import KitchenButton from './KitchenButton';
-import Thing from './Thing';
 
 const Home = () => {
   // modal pop up for grabbing ingredients
   return (
-    <div className="mobile">
+    <div className="mobile-cafe">
       {/* level status bar here! */}
 
       <div className='bg-container'>
         <img src={bg} alt='cafe background' className="cafe-bg"></img>
         <div className="ingredients-run-button">
           <IngredientsDialog></IngredientsDialog>
-          {/* <Thing></Thing> */}
         </div>
         <div className="display-cabinet-button">
           <DisplayCabinetButton></DisplayCabinetButton>
@@ -26,7 +24,6 @@ const Home = () => {
           <KitchenButton></KitchenButton>
         </div>
       </div>
-
     </div>
   );
 }

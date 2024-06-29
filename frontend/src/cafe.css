@@ -35,3 +35,11 @@
   width: 120px;
   padding: 10px;
 }
+
+.oven-button {
+  position: absolute;
+  top: 450px;
+  left: 20px;
+  width: 120px;
+  padding: 10px;
+}

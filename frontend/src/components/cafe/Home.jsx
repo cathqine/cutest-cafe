@@ -3,6 +3,9 @@ import bg from '../../assets/home2.png';
 import CafeButton from '../CafeButton';
 import '../../cafe.css';
 import IngredientsDialog from './IngredientsDialog';
+import DisplayCabinetButton from './DisplayCabinetButton';
+import KitchenButton from './KitchenButton';
+import Thing from './Thing';
 
 const Home = () => {
   // modal pop up for grabbing ingredients
@@ -12,18 +15,16 @@ const Home = () => {
 
       <div className='bg-container'>
         <img src={bg} alt='cafe background' className="cafe-bg"></img>
-        {/* <div className="ingredients-run-button">
+        <div className="ingredients-run-button">
           <IngredientsDialog></IngredientsDialog>
-          <CafeButton location="/ingredients-run" content="↗"></CafeButton>
+          {/* <Thing></Thing> */}
         </div>
         <div className="display-cabinet-button">
-          <CafeButton location="/" content="Display Cabinet"></CafeButton>
-          <CafeButton location="/display-cabinet" content="→"></CafeButton>
+          <DisplayCabinetButton></DisplayCabinetButton>
         </div>
         <div className="kitchen-button">
-          <CafeButton location="/" content="Kitchen"></CafeButton>
-          <CafeButton location="/kitchen" content="←"></CafeButton>
-        </div> */}
+          <KitchenButton></KitchenButton>
+        </div>
       </div>
 
     </div>

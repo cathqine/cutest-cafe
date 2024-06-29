@@ -1,13 +1,13 @@
 import './App.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Home from './components/Home';
-import DisplayCabinet from './components/DisplayCabinet';
-import IngredientsRun from './components/IngredientsRun';
-import Kitchen from './components/Kitchen';
-import KitchenOven from './components/KitchenOven';
-import OvenBaking from './components/OvenBaking';
-import BakingInProgress from './components/BakingInProgress';
-import GettingYourStepsIn from './components/GettingYourStepsIn';
+import Home from './components/cafe/Home';
+import DisplayCabinet from './components/pages/DisplayCabinet';
+import IngredientsRun from './components/ingredients-run/IngredientsRun';
+import Kitchen from './components/pages/Kitchen';
+import KitchenOven from './components/pages/KitchenOven';
+import OvenBaking from './components/pages/OvenBaking';
+import BakingInProgress from './components/pages/BakingInProgress';
+import GettingYourStepsIn from './components/pages/GettingYourStepsIn';
 
 function App() {
   return (

@@ -1,0 +1,40 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.bg-container {
+  display: inline-block;
+  position: relative;
+}
+
+.cafe-bg {
+  display: block;
+  object-fit: cover;
+  object-position: 25% 25%;
+  width: 400px;
+  height: 800px;
+}
+
+.ingredients-run-button {
+  position: absolute;
+  top: 300px;
+  right: 20px;
+  width: 120px;
+  padding: 10px;
+}
+
+.display-cabinet-button {
+  position: absolute;
+  top: 450px;
+  right: 0px;
+  width: 120px;
+  padding: 10px;
+}
+
+.kitchen-button {
+  position: absolute;
+  top: 450px;
+  left: 20px;
+  width: 120px;
+  padding: 10px;
+}

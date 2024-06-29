@@ -1,10 +1,8 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { Link } from 'react-router-dom';
 import { Button, Tooltip, IconButton, Dialog, DialogActions, DialogContent, DialogContentText, DialogTitle } from '@mui/material';
-import Button from '@mui/material/Button';
 import Slide from '@mui/material/Slide';
 import CollectableIngredients from './CollectableIngredients';
-import { Input, Tooltip, IconButton } from '@mui/material';
 
 import arrow from '../../assets/outside_arrow.png';
 
@@ -30,6 +28,8 @@ const CompleteWalkButton = () => {
       console.log('File to be uploaded:', file);
       // UPLOAD LOGIC
       try {
+        const formData = new FormData();
+        formData.append('file',file);  
         const response = await fetch('http://localhost:5000/upload', { // Replace with your backend endpoint
           method: 'POST',
           body: formData,
@@ -51,7 +51,7 @@ const CompleteWalkButton = () => {
 
   return (
     <>
-      <Tooltip title="Leave Walk" arrow>
+      <Tooltip title="Complete Walk" arrow>
         <IconButton onClick={handleClickOpen}>
             <Button variant='text'>
               <img src={arrow} width="120px"></img>

@@ -4,13 +4,16 @@ import { Button, Tooltip, IconButton } from '@mui/material';
 
 import arrow from '../../assets/left_arrow.png';
 
-const KitchenButton = () => {
-
+const KitchenOvenButton = (props) => {
+  let location = props.page;
+  if (!props.disabled) {
+    location = props.location;
+  }
   return (
     <>
-      <Tooltip title="Kitchen" arrow>
+      <Tooltip title="Oven" arrow>
         <IconButton>
-          <Link to="/kitchen" style={{ textDecoration: 'none' }}>
+          <Link to={location} style={{ textDecoration: 'none' }}>
             <Button variant='text'>
               <img src={arrow} width="120px"></img>
             </Button>
@@ -21,4 +24,4 @@ const KitchenButton = () => {
   );
 }
 
-export default KitchenButton;
+export default KitchenOvenButton;

@@ -82,7 +82,7 @@ const IngredientsRun = () => {
                 </Stack>
               </div>
 
-              <Link to="/ingredients-run" style={{ textDecoration: 'none' }}>
+              <Link to="/getting-your-steps-in" style={{ textDecoration: 'none' }}>
                 <div id="submit-to-run" onClick={handleSubmitClick} results={ing} className='ing-txt individual-submit'>
                   SUBMIT
                 </div>

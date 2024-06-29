@@ -1,6 +1,6 @@
 import React from 'react';
 import bg from '../../assets/kitchen.png';
-import CafeButton from '../CafeButton';
+import KitchenOvenButton from '../cafe/KitchenOvenButton';
 import '../../cafe.css';
 
 const Kitchen = () => {
@@ -11,15 +11,13 @@ const Kitchen = () => {
 
       <div className='bg-container'>
         <img src={bg} alt='kitchen background' className="cafe-bg"></img>
-        <div className="oven-button">
-          <CafeButton location="/" content="Oven"></CafeButton>
-          <CafeButton location="/kitchen-oven" content="←"></CafeButton>
+        <div className="kitchen-oven-button">
+          <KitchenOvenButton></KitchenOvenButton>
         </div>
       </div>
 
     </div>
   );
-
 
 }
 

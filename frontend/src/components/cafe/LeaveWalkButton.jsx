@@ -4,13 +4,13 @@ import { Button, Tooltip, IconButton } from '@mui/material';
 
 import arrow from '../../assets/left_arrow.png';
 
-const KitchenButton = () => {
+const LeaveWalkButton = () => {
 
   return (
     <>
-      <Tooltip title="Kitchen" arrow>
+      <Tooltip title="Leave Walk" arrow>
         <IconButton>
-          <Link to="/kitchen" style={{ textDecoration: 'none' }}>
+          <Link to="/home" style={{ textDecoration: 'none' }}>
             <Button variant='text'>
               <img src={arrow} width="120px"></img>
             </Button>
@@ -21,4 +21,4 @@ const KitchenButton = () => {
   );
 }
 
-export default KitchenButton;
+export default LeaveWalkButton;

@@ -6,11 +6,11 @@ class Player:
         self.ingredients = {
             "flour": 0,
             "milk": 0,
-            "strawberries": 0,
-            "eggs": 0,
-            "sugar": 0,
-            "nuts": 0,
-            "chocolate": 0,
+            "strawberries": -1,
+            "eggs": -1,
+            "sugar": -1,
+            "nuts": -1,
+            "chocolate": -1,
         }
 
     # expects keyword arguments where the values are numbers

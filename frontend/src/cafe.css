@@ -10,9 +10,6 @@
 .cafe-bg {
   display: block;
   object-fit: cover;
-  object-position: 25% 25%;
-  width: 400px;
-  height: 800px;
 }
 
 .ingredients-run-button {

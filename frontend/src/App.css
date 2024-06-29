@@ -1,5 +1,6 @@
 * {
   font-family: Arial, Helvetica, sans-serif;
+  overflow: hidden;
 }
 
 .App {
@@ -12,10 +13,8 @@
   align-items: center;
   justify-content: center;
   color: black;
-  width: 400px;
-  height: 800px;
-  background-color: black;
   margin: auto;
+  background-color: #FABF8C;
 }
 
 @media (prefers-reduced-motion: no-preference) {

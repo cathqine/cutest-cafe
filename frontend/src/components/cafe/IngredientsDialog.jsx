@@ -7,6 +7,7 @@ import DialogContentText from '@mui/material/DialogContentText';
 import DialogTitle from '@mui/material/DialogTitle';
 import Slide from '@mui/material/Slide';
 import CollectableIngredients from './CollectableIngredients';
+import { Input } from '@mui/material';
 
 import { useState } from 'react';
 
@@ -15,7 +16,8 @@ const Transition = React.forwardRef(function Transition(props, ref) {
   return <Slide direction="up" ref={ref} {...props} />;
 });
 
-const IngredientsDialog = () => {
+const IngredientsDialog = (props) => {
+  const [numsteps, setNumSteps] = useState(20);
   const [open, setOpen] = useState(false);
 
   const handleClickOpen = () => {
@@ -41,14 +43,16 @@ const IngredientsDialog = () => {
       >
         <DialogTitle>{"Ingredients"}</DialogTitle>
         <DialogContent>
+          Cash in your steps here:
+          <Input type="file">xml file upload</Input> {/* make sure it is disabled first */}
           <DialogContentText id="alert-dialog-slide-description">
-            On your way out to collect ingredients
+            You have this many steps/currency: {numsteps} steps
           </DialogContentText>
           <CollectableIngredients></CollectableIngredients>
         </DialogContent>
 
         <DialogActions>
-          <Button onClick={handleClose}>Let's Go!</Button> {/* make sure it is disabled first */}
+          <Button onClick={handleClose}>Collect!</Button> {/* make sure it is disabled first */}
         </DialogActions>
       </Dialog>
     </>

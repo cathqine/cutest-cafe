@@ -1,22 +1,19 @@
 import React from 'react';
-import bg from '../../assets/home.png';
+import bg from '../../assets/home2.png';
 import CafeButton from '../CafeButton';
 import '../../cafe.css';
 import IngredientsDialog from './IngredientsDialog';
 
 const Home = () => {
   // modal pop up for grabbing ingredients
-
-
   return (
     <div className="mobile">
       {/* level status bar here! */}
 
       <div className='bg-container'>
         <img src={bg} alt='cafe background' className="cafe-bg"></img>
-        <div className="ingredients-run-button">
+        {/* <div className="ingredients-run-button">
           <IngredientsDialog></IngredientsDialog>
-          {/* <CafeButton location="/" content="Grab Ingredients"></CafeButton> */}
           <CafeButton location="/ingredients-run" content="↗"></CafeButton>
         </div>
         <div className="display-cabinet-button">
@@ -26,7 +23,7 @@ const Home = () => {
         <div className="kitchen-button">
           <CafeButton location="/" content="Kitchen"></CafeButton>
           <CafeButton location="/kitchen" content="←"></CafeButton>
-        </div>
+        </div> */}
       </div>
 
     </div>

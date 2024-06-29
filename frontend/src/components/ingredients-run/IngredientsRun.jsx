@@ -9,27 +9,35 @@ import milk from '../../assets/milk.png';
 import sugar from '../../assets/sugar.png';
 
 import BackButton from '../cafe/BackButton';
+import IngButton from './IngButton';
+import { Link } from 'react-router-dom';
+import axios from 'axios';
 
 const IngredientsRun = () => {
   const [ing, setIng] = useState('');
+  let location = '/ingredients-run';
 
   const handleFlourClick = () => {
-    alert('Clicked on flour!');
     setIng('flour');
   };
 
   const handleSugarClick = () => {
-    alert('Clicked on Sugar!');
     setIng('sugar');
   };
 
   const handleMilkClick = () => {
-    alert('Clicked on Milk!');
     setIng('milk');
   };
 
-  const handleSubmitClick = () => {
-    alert('Clicked on SUBMIT! collecting: ', ing);
+  const handleSubmitClick = async (e) => {
+    e.preventDefault();
+    alert('Clicked on SUBMIT! collecting: ', ing, e);
+    try {
+      await axios.post('http://localhost:3000/ingredients-run', { ing });
+      alert('File written successfully');
+    } catch (error) {
+      alert('Error writing file');
+    }
   };
 
   return (
@@ -42,7 +50,6 @@ const IngredientsRun = () => {
           <img src={bg} alt='forest background' className="forest-bg"></img>
 
           <div className="ingredients-modal">
-
             <div className='individual-flour' id='flour' onClick={handleFlourClick}>
               <Stack direction="row">
                 <img src={flour} alt='flour' className='ing-icons'></img>
@@ -64,12 +71,14 @@ const IngredientsRun = () => {
               </Stack>
             </div>
 
-            <div id="submit-to-run" className='individual-submit' onClick={handleSubmitClick}>
-              <div className='ing-txt' style={{ marginLeft: "93px" }}>SUBMIT</div>
-            </div>
+            <Link to={location} style={{ textDecoration: 'none' }}>
+              <div id="submit-to-run" onClick={handleSubmitClick} results={ing} className='ing-txt individual-submit'>
+                SUBMIT
+              </div>
+            </Link>
           </div>
         </div>
-      </div>
+      </div >
     </>
   )
 }

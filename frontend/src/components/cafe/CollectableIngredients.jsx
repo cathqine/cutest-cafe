@@ -9,7 +9,6 @@ const CollectableIngredients = () => {
         <ListItemAvatar>
           <Avatar>
             {/* image icon of a FLOUR */}
-
           </Avatar>
         </ListItemAvatar>
         <ListItemText primary="Flour" secondary="500 steps" />

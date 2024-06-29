@@ -7,7 +7,7 @@
   text-align: center;
 }
 
-.mobile {
+.mobile-cafe {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -15,6 +15,30 @@
   color: black;
   margin: auto;
   background-color: #FABF8C;
+}
+
+.mobile-forest {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  margin: auto;
+  background-color: #a9ad83;
+}
+
+.forest-bg {
+  display: block;
+  object-fit: cover;
+  width: 1250px;
+}
+
+.ingredients-modal {
+  border-radius: 25px;
+  background: #73AD21;
+  padding: 20px;
+  width: 200px;
+  height: 150px;
 }
 
 @media (prefers-reduced-motion: no-preference) {

@@ -24,3 +24,13 @@ class Player:
             return False
         except KeyError:
             return False
+
+    def acquire_ingredients(self, **ingredients_acquired):
+        try:
+            for ingredient, amount_acquired in ingredients_acquired.values():
+                self.ingredients[ingredient] += amount_acquired
+        # not actually sure what to do if these errors occur
+        except TypeError:
+            return False
+        except KeyError:
+            return False

@@ -38,7 +38,7 @@ const IngredientsRun = () => {
     setIsVisible(false);
     alert('Clicked on SUBMIT! collecting: ', data, e);
     try {
-      await axios.post('http://localhost:3000/ingredients-run', { data });
+      await axios.post('http://127.0.0.1:5000/ingredients-run', { data });
       alert('File written successfully');
     } catch (error) {
       alert('Error: 404');

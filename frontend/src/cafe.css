@@ -7,6 +7,86 @@
   position: relative;
 }
 
+.forest-bg {
+  display: block;
+  object-fit: cover;
+  width: 1250px;
+}
+
+.ingredients-modal {
+  position: absolute;
+  top: 70px;
+  margin-left: 23em;
+  width: 500px;
+  /* padding: 10px; */
+  border-radius: 100px;
+  background: #c3854e;
+  padding: 20px;
+  height: 650px;
+}
+
+.le-button {}
+
+.ing-icons {
+  margin-top: 5px;
+  width: 70px;
+  height: 70px;
+}
+
+.ing-txt {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 50px;
+  font-weight: bold;
+  margin-left: 20px;
+  margin-top: 7px;
+}
+
+.individual-flour {
+  position: absolute;
+  margin-top: 50px;
+  margin-left: 40px;
+  width: 360px;
+  /* padding: 10px; */
+  border-radius: 100px;
+  background: #ffdf9b;
+  padding: 20px;
+  height: 70px;
+}
+
+.individual-sugar {
+  position: absolute;
+  margin-top: 200px;
+  margin-left: 40px;
+  width: 360px;
+  /* padding: 10px; */
+  border-radius: 100px;
+  background: #ffdf9b;
+  padding: 20px;
+  height: 70px;
+}
+
+.individual-milk {
+  position: absolute;
+  margin-top: 350px;
+  margin-left: 40px;
+  width: 360px;
+  border-radius: 100px;
+  background: #ffdf9b;
+  padding: 20px;
+  height: 70px;
+}
+
+.individual-submit {
+  position: absolute;
+  margin-top: 500px;
+  margin-left: 40px;
+  width: 360px;
+  border-radius: 100px;
+  background: #ffb79b;
+  padding: 20px;
+  height: 70px;
+}
+
 .cafe-bg {
   display: block;
   object-fit: cover;

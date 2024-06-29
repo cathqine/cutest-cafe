@@ -7,9 +7,11 @@ import DialogContentText from '@mui/material/DialogContentText';
 import DialogTitle from '@mui/material/DialogTitle';
 import Slide from '@mui/material/Slide';
 import CollectableIngredients from './CollectableIngredients';
-import { Input } from '@mui/material';
+import { Input, Tooltip, IconButton } from '@mui/material';
 
+import arrow from '../../assets/outside_arrow.png';
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 // for cool transitions
 const Transition = React.forwardRef(function Transition(props, ref) {
@@ -28,11 +30,23 @@ const IngredientsDialog = (props) => {
     setOpen(false);
   };
 
+  let location = props.page;
+  if (!props.disabled) {
+    location = props.location;
+  }
+
   return (
     <>
-      <Button variant='text' color="info" style={{ backgroundColor: 'rgba(255, 255, 255, 0.75)', fontWeight: 'bold' }} onClick={handleClickOpen}>
-        Grab Ingredients
-      </Button>
+      <Tooltip title="Ingredients Run" arrow>
+        <IconButton>
+          <Link to="/ingredients-run" style={{ textDecoration: 'none' }}>
+            <Button variant='text' onClick={handleClickOpen}>
+              <img src={arrow} width="120px"></img>
+            </Button>
+          </Link>
+        </IconButton>
+      </Tooltip>
+
       <Dialog
         maxWidth="xs"
         open={open}
@@ -43,8 +57,6 @@ const IngredientsDialog = (props) => {
       >
         <DialogTitle>{"Ingredients"}</DialogTitle>
         <DialogContent>
-          Cash in your steps here:
-          <Input type="file">xml file upload</Input> {/* make sure it is disabled first */}
           <DialogContentText id="alert-dialog-slide-description">
             You have this many steps/currency: {numsteps} steps
           </DialogContentText>

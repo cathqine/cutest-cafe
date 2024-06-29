@@ -8,7 +8,7 @@ const CollectableIngredients = () => {
       <ListItemButton>
         <ListItemAvatar>
           <Avatar>
-            {/* image icon */}
+            {/* image icon of a FLOUR */}
 
           </Avatar>
         </ListItemAvatar>
@@ -18,7 +18,7 @@ const CollectableIngredients = () => {
       <ListItemButton>
         <ListItemAvatar>
           <Avatar>
-            {/* image icon */}
+            {/* image icon of a MILK */}
           </Avatar>
         </ListItemAvatar>
         <ListItemText primary="Milk" secondary="1000 steps" />
@@ -27,7 +27,7 @@ const CollectableIngredients = () => {
       <ListItemButton>
         <ListItemAvatar>
           <Avatar>
-            {/* image icon */}
+            {/* image icon of a SUGAR */}
           </Avatar>
         </ListItemAvatar>
         <ListItemText primary="Sugar" secondary="1000 steps" />

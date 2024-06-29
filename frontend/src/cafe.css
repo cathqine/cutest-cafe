@@ -14,8 +14,8 @@
 
 .ingredients-run-button {
   position: absolute;
-  top: 300px;
-  right: 20px;
+  top: 280px;
+  right: 540px;
   width: 120px;
   padding: 10px;
 }
@@ -23,7 +23,7 @@
 .display-cabinet-button {
   position: absolute;
   top: 450px;
-  right: 0px;
+  right: 30px;
   width: 120px;
   padding: 10px;
 }

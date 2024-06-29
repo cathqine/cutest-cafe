@@ -36,10 +36,34 @@
   padding: 10px;
 }
 
+.kitchen-oven-button {
+  position: absolute;
+  top: 450px;
+  left: 500px;
+  width: 120px;
+  padding: 10px;
+}
+
 .oven-button {
   position: absolute;
   top: 450px;
   left: 20px;
+  width: 120px;
+  padding: 10px;
+}
+
+.leave-walk-button {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 120px;
+  padding: 10px;
+}
+
+.complete-walk-button {
+  position: absolute;
+  top: 280px;
+  left: 500px;
   width: 120px;
   padding: 10px;
 }

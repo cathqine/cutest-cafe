@@ -32,7 +32,7 @@ def kitchen_oven():
 # submit button in ingredients run
 @app.route('/ingredients-run', methods=['POST'])
 def get_ingredient():
-    ingredient = request.json.get('data')
+    ingredient = request.json
     print(ingredient)
     return ingredient
 
